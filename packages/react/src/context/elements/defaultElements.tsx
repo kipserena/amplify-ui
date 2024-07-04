@@ -17,3 +17,8 @@ export const ParagraphElementBase: ElementsBase['Text'] = React.forwardRef(
   (props, ref) => <p {...props} ref={ref} />
 );
 ParagraphElementBase.displayName = 'Paragraph';
+
+export const ImageElementBase: ElementsBase['Image'] = React.forwardRef(
+  (props, ref) => <img {...props} ref={ref} />
+);
+ImageElementBase.displayName = 'Image';

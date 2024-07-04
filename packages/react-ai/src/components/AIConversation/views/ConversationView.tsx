@@ -1,5 +1,7 @@
 import React from 'react';
 import { useElement } from '../context/elements';
+import Messages from './Messages';
+import { mockMessages } from '../mocks/messagesMock';
 
 export default function Conversation(): JSX.Element {
   const View = useElement('View');
@@ -8,7 +10,10 @@ export default function Conversation(): JSX.Element {
     <View
       style={{
         width: '584px',
-        height: '344px',
+        fontFamily: 'Inter',
+        fontSize: '16px',
+        fontWeight: 400,
+        lineHeight: '24px',
       }}
     >
       <View
@@ -31,10 +36,9 @@ export default function Conversation(): JSX.Element {
           borderLeft: '1px solid rgba(220, 222, 224, 1)',
           borderRight: '1px solid rgba(220, 222, 224, 1)',
           padding: '0px 16px',
-          height: '300px',
         }}
       >
-        messages subcomponent
+        <Messages messages={mockMessages} />
       </View>
       <View
         style={{

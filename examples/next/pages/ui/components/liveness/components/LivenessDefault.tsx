@@ -38,15 +38,15 @@ export default function LivenessDefault({
             sessionId={createLivenessSessionApiData['sessionId']}
           />
 
-          {!!getLivenessResponse ? (
+          {/* {!!getLivenessResponse ? (
             <LivenessInlineResults
               getLivenessResponse={getLivenessResponse}
               onUserCancel={onUserCancel}
             />
-          ) : null}
+          ) : null} */}
 
           <Flex gap="0" direction="column" position="relative">
-            {!getLivenessResponse ? (
+            {/* {!getLivenessResponse ? ( */}
               <FaceLivenessDetectorCore
                 sessionId={createLivenessSessionApiData['sessionId']}
                 region={'us-east-1'}
@@ -65,7 +65,7 @@ export default function LivenessDefault({
                   ? { config: { credentialProvider } }
                   : {})}
               />
-            ) : null}
+            {/* ) : null} */}
           </Flex>
         </Flex>
       )}
