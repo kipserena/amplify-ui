@@ -22,3 +22,5 @@ export {
   BaseElementProps,
   ParagraphElementBase,
 } from './context/elements';
+
+export * from './context/elements/types';

@@ -1,4 +1,4 @@
-import Avatar from './Avatar';
+import { Avatar } from './Avatar/Avatar';
 import Conversation from './ConversationView';
 import Messages from './Messages';
 import SuggestedPrompts from './SuggestedPrompts';

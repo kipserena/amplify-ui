@@ -1,4 +1,5 @@
 import React from 'react';
+import { Avatar } from './Avatar/Avatar';
 import { useElement } from '../context/elements';
 
 export default function Conversation(): JSX.Element {
@@ -34,7 +35,10 @@ export default function Conversation(): JSX.Element {
           height: '300px',
         }}
       >
-        messages subcomponent
+        <Avatar>
+          <Avatar.Icon>Icon</Avatar.Icon>
+          <Avatar.DisplayName>Display name</Avatar.DisplayName>
+        </Avatar>
       </View>
       <View
         style={{
