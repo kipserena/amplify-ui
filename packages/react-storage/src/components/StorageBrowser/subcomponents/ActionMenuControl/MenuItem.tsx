@@ -2,9 +2,10 @@ import * as React from 'react';
 import { ButtonElementProps } from '@aws-amplify/ui-react/internal';
 import { useElement } from '../../context/elements';
 
-export const Toggle = <T extends ButtonElementProps>({
+export const MenuItem = <T extends ButtonElementProps>({
   className,
   onClick,
+  isDisabled = false,
   children,
   ...rest
 }: T): JSX.Element => {
@@ -12,13 +13,13 @@ export const Toggle = <T extends ButtonElementProps>({
 
   return (
     <Button
-      aria-haspopup="menu"
-      aria-expanded={false}
       className={className}
-      onClick={onClick}
+      role="menuitem"
       {...rest}
+      onClick={onClick}
+      disabled={isDisabled}
     >
-      {children ?? 'Actions'}
+      {children}
     </Button>
   );
 };

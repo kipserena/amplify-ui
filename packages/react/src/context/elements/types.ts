@@ -24,8 +24,6 @@ export type ExtendElement<
 export interface BaseElementProps<T> {
   ariaLabel?: string;
   children?: React.ReactNode;
-  id?: string;
-  ariaLabel?: string;
   className?: string;
   id?: string;
   ref?: React.Ref<T>;
@@ -67,6 +65,8 @@ export interface AnchorElementProps
   value?: string;
 }
 
+export interface HRElementProps extends BaseElementProps<HTMLHRElement> {}
+
 export interface NavElementProps extends BaseElementProps<HTMLElement> {}
 
 export interface SectionElementProps extends BaseElementProps<HTMLElement> {}
@@ -91,6 +91,7 @@ export interface ElementsBase extends Elements {
   Anchor: Component<AnchorElementProps>;
   Button: Component<ButtonElementProps>;
   ButtonGroup: Component<ButtonGroupElementProps>;
+  HR: Component<HRElementProps>;
   Li: Component<LiElementProps>;
   Menu: Component<MenuElementProps>;
   Nav: Component<NavElementProps>;

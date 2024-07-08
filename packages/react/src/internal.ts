@@ -18,6 +18,7 @@ export {
   ElementsBase,
   ExtendElement,
   ButtonElementBase,
+  HRElementBase,
   NavElementBase,
   OlElementBase,
   SectionElementBase,

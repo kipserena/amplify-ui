@@ -8,6 +8,11 @@ export const ButtonElementBase: ElementsBase['Button'] = React.forwardRef(
 );
 ButtonElementBase.displayName = 'Button';
 
+export const HRElementBase: ElementsBase['HR'] = React.forwardRef(
+  (props, ref) => <hr {...props} ref={ref} />
+);
+HRElementBase.displayName = 'Hr';
+
 export const LiElementBase: ElementsBase['Li'] = React.forwardRef(
   (props, ref) => <li {...props} ref={ref} />
 );

@@ -3,20 +3,25 @@ import { ViewElementProps } from '@aws-amplify/ui-react/internal';
 import { Container } from './Container';
 import { Toggle } from './Toggle';
 import { Menu } from './Menu';
+import { MenuItem } from './MenuItem';
+import { Separator } from './Separator';
 
 const ActionMenu = <T extends ViewElementProps>({
   className,
   children,
   ...rest
 }: T): JSX.Element => {
-  const toggleId = `actions-menu-toggle-${React.useId()}`;
-
   return (
     <Container className={className} {...rest}>
-      <Toggle id={toggleId} />
+      <Toggle />
       <Menu>
-        <button role="menuitem">Upload file</button>
-        <button role="menuitem">Upload folder</button>
+        <MenuItem>Create folder</MenuItem>
+        <MenuItem>Custom location action</MenuItem>
+        <MenuItem>Upload file</MenuItem>
+        <MenuItem>Upload folder</MenuItem>
+        <Separator />
+        <MenuItem>Copy</MenuItem>
+        <MenuItem>Custom action</MenuItem>
       </Menu>
     </Container>
   );

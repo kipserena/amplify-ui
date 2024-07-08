@@ -1,5 +1,6 @@
 import {
   ButtonElementBase,
+  HRElementBase,
   LiElementBase,
   NavElementBase,
   OlElementBase,
@@ -12,11 +13,12 @@ import {
 export interface StorageBrowserElements
   extends Pick<
     ElementsBase,
-    'Button' | 'Li' | 'Nav' | 'Ol' | 'Section' | 'View'
+    'Button' | 'HR' | 'Li' | 'Nav' | 'Ol' | 'Section' | 'View'
   > {}
 
 const defaultValue: StorageBrowserElements = {
   Button: ButtonElementBase,
+  HR: HRElementBase,
   Li: LiElementBase,
   Nav: NavElementBase,
   Ol: OlElementBase,
