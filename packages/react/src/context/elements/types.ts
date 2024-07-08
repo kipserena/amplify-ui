@@ -22,10 +22,12 @@ export type ExtendElement<
 > = (props: React.ComponentProps<T> & K) => JSX.Element;
 
 export interface BaseElementProps<T> {
+  ariaLabel?: string;
   children?: React.ReactNode;
   id?: string;
   ariaLabel?: string;
   className?: string;
+  id?: string;
   ref?: React.Ref<T>;
 }
 
