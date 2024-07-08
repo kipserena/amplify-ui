@@ -4,6 +4,7 @@ import { useElement } from '../../context/elements';
 
 export const Toggle = <T extends ButtonElementProps>({
   className,
+  id,
   onClick,
   children,
   ...rest
@@ -11,7 +12,14 @@ export const Toggle = <T extends ButtonElementProps>({
   const Button = useElement('Button');
 
   return (
-    <Button className={className} {...rest} onClick={onClick}>
+    <Button
+      id={id}
+      aria-haspopup="menu"
+      aria-expanded={false}
+      className={className}
+      onClick={onClick}
+      {...rest}
+    >
       {children ?? 'Actions'}
     </Button>
   );
