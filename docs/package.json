@@ -49,9 +49,9 @@
     "remark-frontmatter": "^3.0.0",
     "remark-gfm": "^1.0.0",
     "remark-github": "^10.1.0",
-    "remark-mdx-frontmatter": "^1.0.1",
+    "remark-mdx-frontmatter": "^3.0.0",
     "remark-mdx-images": "^1.0.2",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.3.1",
     "sass": "^1.43.4",
     "slugify": "^1.6.3"
   },
