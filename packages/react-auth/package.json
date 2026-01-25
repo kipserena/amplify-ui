@@ -45,7 +45,7 @@
     "@aws-amplify/ui-react-core": "3.0.17",
     "@aws-amplify/ui-react-core-auth": "0.0.19",
     "@xstate/react": "3.2.2",
-    "lodash": "4.17.21",
+    "lodash": "4.17.23",
     "tslib": "^2.5.2"
   },
   "peerDependencies": {
