@@ -36,7 +36,7 @@
     "@aws-amplify/ui": "6.0.17",
     "@aws-amplify/ui-react-core": "3.0.17",
     "@xstate/react": "3.2.2",
-    "lodash": "4.17.21",
+    "lodash": "4.17.23",
     "xstate": "^4.33.6"
   },
   "peerDependencies": {
